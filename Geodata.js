@@ -29,7 +29,7 @@
 
     // Download the data
     myConnector.getData = function(table, doneCallback) {
-        $.getJSON("https://raw.githubusercontent.com/mobile12345/geocoding/master/data.html", function(resp) {
+        $.getJSON("https://rawgit.com/mobile12345/geocoding/master/data.html", function(resp) {
             var feat = resp.features,
                 tableData = [];
 
