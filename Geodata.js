@@ -36,9 +36,9 @@
             // Iterate over the JSON object
             for (var i = 0, len = feat.length; i < len; i++) {
                 tableData.push({
-					"id": feat[i].id,
-                    "longitude": feat[i].lon,
-                    "latitude": feat[i].lat
+			"id": feat[i].id,
+                	"longitude": feat[i].lon,
+                    	"latitude": feat[i].lat
                 });
             }
 
