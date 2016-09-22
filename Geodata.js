@@ -29,16 +29,16 @@
 
     // Download the data
     myConnector.getData = function(table, doneCallback) {
-        $.getJSON("https://rawgit.com/mobile12345/geocoding/master/data.html", function(resp) {
-            var feat = resp.features,
+        $.getJSON("https://rawgit.com/mobile12345/geocoding/master/data.txt", function(resp) {
+            var addr = resp.addresses,
                 tableData = [];
 
             // Iterate over the JSON object
-            for (var i = 0, len = feat.length; i < len; i++) {
+            for (var i = 0, len = addr.length; i < len; i++) {
                 tableData.push({
-			"id": feat[i].id,
-                	"longitude": feat[i].lon,
-                    	"latitude": feat[i].lat
+			"id": addr[i].id,
+                	"longitude": addr[i].lon,
+                    	"latitude": addr[i].lat
                 });
             }
 
