@@ -5,39 +5,39 @@
     // Define the schema
     myConnector.getSchema = function(schemaCallback) {
         var cols = [{
-            	id: "Company Number",
+            	id: "Company_Number",
             	alias: "Company Number",
             	dataType: tableau.dataTypeEnum.string
 	}, {
-		id: "Loc Company Name",
+		id: "Loc_Company_Name",
             	alias: "Loc Company Name",
             	dataType: tableau.dataTypeEnum.string
         }, {
-		id: "Account Type",
+		id: "Account_Type",
             	alias: "Account Type",
             	dataType: tableau.dataTypeEnum.string
         }, {
-		id: "Loc Street",
+		id: "Loc_Street",
             	alias: "Street",
             	dataType: tableau.dataTypeEnum.string
         }, {
-		id: "loc City",
+		id: "Loc_City",
             	alias: "City",
             	dataType: tableau.dataTypeEnum.string
         }, {
-		id: "Loc Zip Code",
+		id: "Loc_Zip_Code",
             	alias: "Zip Code",
             	dataType: tableau.dataTypeEnum.string
         }, {
-		id: "Loc Country",
+		id: "Loc_Country",
             	alias: "Country",
             	dataType: tableau.dataTypeEnum.string
         }, {
-            id: "latitude",
+            id: "Latitude",
             alias: "latitude",
             dataType: tableau.dataTypeEnum.float
         }, {
-            id: "longitude",
+            id: "Longitude",
             alias: "longitude",
             dataType: tableau.dataTypeEnum.float
         }];
@@ -60,15 +60,15 @@
             // Iterate over the JSON object
             for (var i = 0, len = cust.length; i < len; i++) {
                 tableData.push({
-			"Company Number": cust[i].Company_Number,
-			"Loc Company Name": cust[i].Loc_Company_Name,
-			"Account Type": cust[i].Account_Type,
-			"Loc Street": cust[i].Loc_Street,
-			"Loc City": cust[i].Loc_City,
-			"Loc Zip Code": cust[i].Loc_Zip_Code,
-			"Loc Country": cust[i].Loc_Country,
-			"longitude": cust[i].longitude,
-                	"latitude": cust[i].latitude,
+			"Company_Number": cust[i].Company_Number,
+			"Loc_Company_Name": cust[i].Loc_Company_Name,
+			"Account_Type": cust[i].Account_Type,
+			"Loc_Street": cust[i].Loc_Street,
+			"Loc_City": cust[i].Loc_City,
+			"Loc_Zip_Code": cust[i].Loc_Zip_Code,
+			"Loc_Country": cust[i].Loc_Country,
+			"Longitude": cust[i].longitude,
+                	"Latitude": cust[i].latitude,
                 });
             }
 
