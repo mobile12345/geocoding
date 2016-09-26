@@ -17,19 +17,19 @@
             	alias: "Account Type",
             	dataType: tableau.dataTypeEnum.string
         }, {
-		id: "Street",
+		id: "Loc Street",
             	alias: "Street",
             	dataType: tableau.dataTypeEnum.string
         }, {
-		id: "City",
+		id: "loc City",
             	alias: "City",
             	dataType: tableau.dataTypeEnum.string
         }, {
-		id: "Zip Code",
+		id: "Loc Zip Code",
             	alias: "Zip Code",
             	dataType: tableau.dataTypeEnum.string
         }, {
-		id: "Country",
+		id: "Loc Country",
             	alias: "Country",
             	dataType: tableau.dataTypeEnum.string
         }, {
